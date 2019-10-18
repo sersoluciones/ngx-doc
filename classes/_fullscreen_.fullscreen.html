@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PrefersColorScheme | @sersol/ngx-ui</title>
+	<title>Fullscreen | @sersol/ngx-ui</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_prefers_color_scheme_.html">&quot;prefers-color-scheme&quot;</a>
+					<a href="../modules/_fullscreen_.html">&quot;fullscreen&quot;</a>
 				</li>
 				<li>
-					<a href="_prefers_color_scheme_.preferscolorscheme.html">PrefersColorScheme</a>
+					<a href="_fullscreen_.fullscreen.html">Fullscreen</a>
 				</li>
 			</ul>
-			<h1>Class PrefersColorScheme</h1>
+			<h1>Class Fullscreen</h1>
 		</div>
 	</div>
 </header>
@@ -73,12 +73,11 @@
 				<div class="tsd-comment tsd-typography">
 					<dl class="tsd-comment-tags">
 						<dt>description</dt>
-						<dd><p>Clase para obtener, observar y cambiar el esquema de color claro/oscuro</p>
+						<dd><p>Clase para entrar y salir del modo pantalla completa en el navegador web</p>
 						</dd>
 						<dt>example</dt>
-						<dd><p>this.colorscheme = new PrefersColorScheme();
-								this.colorscheme.init(); // Setea el esquema inicial
-							this.colorscheme.watch(); // Observa cambio de esquema en OS</p>
+						<dd><p>Fullscreen.enable(); // Habilita el modo pantalla completa
+							Fullscreen.disable(); // Deshabilita el modo pantalla completa</p>
 						</dd>
 					</dl>
 				</div>
@@ -87,7 +86,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PrefersColorScheme</span>
+						<span class="target">Fullscreen</span>
 					</li>
 				</ul>
 			</section>
@@ -98,25 +97,21 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_prefers_color_scheme_.preferscolorscheme.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_fullscreen_.fullscreen.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_prefers_color_scheme_.preferscolorscheme.html#scheme" class="tsd-kind-icon">Scheme</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_prefers_color_scheme_.preferscolorscheme.html#schemedarkclassname" class="tsd-kind-icon">Scheme<wbr>Dark<wbr>Class<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_prefers_color_scheme_.preferscolorscheme.html#schemelightclassname" class="tsd-kind-icon">Scheme<wbr>Light<wbr>Class<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_fullscreen_.fullscreen.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_prefers_color_scheme_.preferscolorscheme.html#enabledark" class="tsd-kind-icon">enable<wbr>Dark</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_prefers_color_scheme_.preferscolorscheme.html#enablelight" class="tsd-kind-icon">enable<wbr>Light</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_prefers_color_scheme_.preferscolorscheme.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_prefers_color_scheme_.preferscolorscheme.html#init" class="tsd-kind-icon">init</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_prefers_color_scheme_.preferscolorscheme.html#watch" class="tsd-kind-icon">watch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fullscreen_.fullscreen.html#disable" class="tsd-kind-icon">disable</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fullscreen_.fullscreen.html#enable" class="tsd-kind-icon">enable</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fullscreen_.fullscreen.html#toggle" class="tsd-kind-icon">toggle</a></li>
 							</ul>
 						</section>
 					</div>
@@ -128,40 +123,21 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Prefers<wbr>Color<wbr>Scheme<span class="tsd-signature-symbol">(</span>SchemeLightClassName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, SchemeDarkClassName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_prefers_color_scheme_.preferscolorscheme.html" class="tsd-signature-type">PrefersColorScheme</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Fullscreen<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_fullscreen_.fullscreen.html" class="tsd-signature-type">Fullscreen</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/prefers-color-scheme.ts#L12">prefers-color-scheme.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/fullscreen.ts#L9">fullscreen.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Crea una instancia de PrefersColorScheme</p>
+									<p>Crea una instancia de Fullscreen</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> SchemeLightClassName: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;scheme-light&quot;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Clase css opcional para el esquema de color claro</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> SchemeDarkClassName: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;scheme-dark&quot;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Clase css opcional para el esquema de color oscuro</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_prefers_color_scheme_.preferscolorscheme.html" class="tsd-signature-type">PrefersColorScheme</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_fullscreen_.fullscreen.html" class="tsd-signature-type">Fullscreen</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -169,32 +145,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="scheme" class="tsd-anchor"></a>
-					<h3>Scheme</h3>
-					<div class="tsd-signature tsd-kind-icon">Scheme<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MediaQueryList</span></div>
+					<a name="isenabled" class="tsd-anchor"></a>
+					<h3>is<wbr>Enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/prefers-color-scheme.ts#L10">prefers-color-scheme.ts:10</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="schemedarkclassname" class="tsd-anchor"></a>
-					<h3>Scheme<wbr>Dark<wbr>Class<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">Scheme<wbr>Dark<wbr>Class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/prefers-color-scheme.ts#L12">prefers-color-scheme.ts:12</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="schemelightclassname" class="tsd-anchor"></a>
-					<h3>Scheme<wbr>Light<wbr>Class<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">Scheme<wbr>Light<wbr>Class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/prefers-color-scheme.ts#L11">prefers-color-scheme.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/fullscreen.ts#L9">fullscreen.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,22 +158,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="enabledark" class="tsd-anchor"></a>
-					<h3>enable<wbr>Dark</h3>
+					<a name="disable" class="tsd-anchor"></a>
+					<h3>disable</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">enable<wbr>Dark<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">disable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/prefers-color-scheme.ts#L56">prefers-color-scheme.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/fullscreen.ts#L70">fullscreen.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<dl class="tsd-comment-tags">
 									<dt>description</dt>
-									<dd><p>Agrega SchemeDarkClassName y remueve SchemeLightClassName a la etiqueta body</p>
+									<dd><p>Deshabilita el modo pantalla completa</p>
 									</dd>
 								</dl>
 							</div>
@@ -226,22 +182,22 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="enablelight" class="tsd-anchor"></a>
-					<h3>enable<wbr>Light</h3>
+					<a name="enable" class="tsd-anchor"></a>
+					<h3>enable</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">enable<wbr>Light<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">enable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/prefers-color-scheme.ts#L70">prefers-color-scheme.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/fullscreen.ts#L51">fullscreen.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<dl class="tsd-comment-tags">
 									<dt>description</dt>
-									<dd><p>Agrega SchemeLightClassName y remueve SchemeDarkClassName a la etiqueta body</p>
+									<dd><p>Habilita el modo pantalla completa</p>
 									</dd>
 								</dl>
 							</div>
@@ -250,74 +206,22 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>get</h3>
+					<a name="toggle" class="tsd-anchor"></a>
+					<h3>toggle</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">toggle<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/prefers-color-scheme.ts#L44">prefers-color-scheme.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/fullscreen.ts#L90">fullscreen.ts:90</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<dl class="tsd-comment-tags">
 									<dt>description</dt>
-									<dd><p>Obtener el esquema de color actual del SO</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>Esquema de color</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="init" class="tsd-anchor"></a>
-					<h3>init</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/prefers-color-scheme.ts#L31">prefers-color-scheme.ts:31</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>description</dt>
-									<dd><p>Inicializar el esquema de color</p>
-									</dd>
-									<dt>usagenotes</dt>
-									<dd><p>Usarse unicamente si se desea aplicar el esquema de color acorde al esquema de color del sistema operativo</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="watch" class="tsd-anchor"></a>
-					<h3>watch</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">watch<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/sersoluciones/ngx-ui/blob/d2cb3c0/src/typescript/prefers-color-scheme.ts#L84">prefers-color-scheme.ts:84</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>description</dt>
-									<dd><p>Habilita el cambio automatico de esquema de color según el cambio de esquema de color del SO</p>
+									<dd><p>Habilita/Deshablita el modo pantalla completa</p>
 									</dd>
 								</dl>
 							</div>
@@ -336,10 +240,10 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_cookie_.html">"cookie"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_fullscreen_.html">"fullscreen"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_prefers_color_scheme_.html">"prefers-<wbr>color-<wbr>scheme"</a>
 					</li>
 				</ul>
@@ -349,39 +253,33 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_prefers_color_scheme_.preferscolorscheme.html" class="tsd-kind-icon">Prefers<wbr>Color<wbr>Scheme</a>
+						<a href="_fullscreen_.fullscreen.html" class="tsd-kind-icon">Fullscreen</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_prefers_color_scheme_.preferscolorscheme.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_fullscreen_.fullscreen.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_prefers_color_scheme_.preferscolorscheme.html#scheme" class="tsd-kind-icon">Scheme</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_prefers_color_scheme_.preferscolorscheme.html#schemedarkclassname" class="tsd-kind-icon">Scheme<wbr>Dark<wbr>Class<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_prefers_color_scheme_.preferscolorscheme.html#schemelightclassname" class="tsd-kind-icon">Scheme<wbr>Light<wbr>Class<wbr>Name</a>
+								<a href="_fullscreen_.fullscreen.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_prefers_color_scheme_.preferscolorscheme.html#enabledark" class="tsd-kind-icon">enable<wbr>Dark</a>
+								<a href="_fullscreen_.fullscreen.html#disable" class="tsd-kind-icon">disable</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_prefers_color_scheme_.preferscolorscheme.html#enablelight" class="tsd-kind-icon">enable<wbr>Light</a>
+								<a href="_fullscreen_.fullscreen.html#enable" class="tsd-kind-icon">enable</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_prefers_color_scheme_.preferscolorscheme.html#get" class="tsd-kind-icon">get</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_prefers_color_scheme_.preferscolorscheme.html#init" class="tsd-kind-icon">init</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_prefers_color_scheme_.preferscolorscheme.html#watch" class="tsd-kind-icon">watch</a>
+								<a href="_fullscreen_.fullscreen.html#toggle" class="tsd-kind-icon">toggle</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_fullscreen_.fsdocument.html" class="tsd-kind-icon">Fs<wbr>Document</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_fullscreen_.fsdocumentelement.html" class="tsd-kind-icon">Fs<wbr>Document<wbr>Element</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
