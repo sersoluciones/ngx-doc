@@ -1,0 +1,418 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>&quot;utils/array&quot; | @sersol/ngx</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@sersol/ngx</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_utils_array_.html">&quot;utils/array&quot;</a>
+				</li>
+			</ul>
+			<h1>Module &quot;utils/array&quot;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_array_.html#arraygroupby" class="tsd-kind-icon">array<wbr>Group<wbr>By</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_array_.html#getobjindexbyvalue" class="tsd-kind-icon">get<wbr>Obj<wbr>Index<wbr>ByValue</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_array_.html#getobjectbyvalue" class="tsd-kind-icon">get<wbr>Object<wbr>ByValue</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_array_.html#inarray" class="tsd-kind-icon">in<wbr>Array</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_array_.html#notinarray" class="tsd-kind-icon">not<wbr>InArray</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="arraygroupby" class="tsd-anchor"></a>
+					<h3>array<wbr>Group<wbr>By</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Group<wbr>By<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, field<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sersoluciones/ngx/blob/50ab841/src/utils/array.ts#L30">Users/andres/Documents/Repos/ngx/src/utils/array.ts:30</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>Función para crear un objeto con los datos agrupado de un arreglo por un valor dado</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Arreglo para agrupar</p>
+									</div>
+								</li>
+								<li>
+									<h5>field: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Campo para agrupar</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getobjindexbyvalue" class="tsd-anchor"></a>
+					<h3>get<wbr>Obj<wbr>Index<wbr>ByValue</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Obj<wbr>Index<wbr>ByValue<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, field<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sersoluciones/ngx/blob/50ab841/src/utils/array.ts#L91">Users/andres/Documents/Repos/ngx/src/utils/array.ts:91</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>Función para obtener el índice de un objeto contenido en un arreglo usando una pareja clave-valor para su busqueda</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Arreglo de objetos</p>
+									</div>
+								</li>
+								<li>
+									<h5>field: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Campo de busqueda</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Valor del campo de busqueda</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getobjectbyvalue" class="tsd-anchor"></a>
+					<h3>get<wbr>Object<wbr>ByValue</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Object<wbr>ByValue<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, field<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sersoluciones/ngx/blob/50ab841/src/utils/array.ts#L54">Users/andres/Documents/Repos/ngx/src/utils/array.ts:54</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>Función para obtener un objeto contenido en un arreglo usando una pareja clave-valor para su busqueda</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Arreglo de objetos</p>
+									</div>
+								</li>
+								<li>
+									<h5>field: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Campo de busqueda</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Valor del campo de busqueda</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span></h4>
+							<ul class="tsd-parameters">
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="inarray" class="tsd-anchor"></a>
+					<h3>in<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">in<wbr>Array<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sersoluciones/ngx/blob/50ab841/src/utils/array.ts#L8">Users/andres/Documents/Repos/ngx/src/utils/array.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>Función para verificar si un valor existe en un arreglo</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Valor a encontrar</p>
+									</div>
+								</li>
+								<li>
+									<h5>array: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Arreglo objetivo de la busqueda</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="notinarray" class="tsd-anchor"></a>
+					<h3>not<wbr>InArray</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">not<wbr>InArray<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sersoluciones/ngx/blob/50ab841/src/utils/array.ts#L19">Users/andres/Documents/Repos/ngx/src/utils/array.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>description</dt>
+									<dd><p>Función para verificar si un valor NO existe en un arreglo</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Valor a encontrar</p>
+									</div>
+								</li>
+								<li>
+									<h5>array: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Arreglo objetivo de la busqueda</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_click_pointer_click_pointer_directive_.html">&quot;click-<wbr>pointer/click-<wbr>pointer.directive&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_cookie_cookies_service_.html">&quot;cookie/cookies.service&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_external_script_external_script_service_.html">&quot;external-<wbr>script/external-<wbr>script.service&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_facebook_facebooksdkmodule_.html">&quot;facebook/<wbr>FacebookSDKModule&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_facebook_facebooksdkservice_.html">&quot;facebook/<wbr>FacebookSDKService&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_facebook_ifacebook_.html">&quot;facebook/IFacebook&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_facebook_config_facebooksdkconfig_.html">&quot;facebook/config/<wbr>FacebookSDKConfig&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_fullscreen_fullscreen_interface_.html">&quot;fullscreen/fullscreen-<wbr>interface&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_fullscreen_fullscreen_service_.html">&quot;fullscreen/fullscreen.service&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_google_googlesdkmodule_.html">&quot;google/<wbr>GoogleSDKModule&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_google_googlesdkservice_.html">&quot;google/<wbr>GoogleSDKService&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_google_igoogle_.html">&quot;google/IGoogle&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_google_config_googlesdkconfig_.html">&quot;google/config/<wbr>GoogleSDKConfig&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_open_id_claimsmodule_.html">&quot;open-<wbr>id/<wbr>Claims<wbr>Module&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_open_id_claimsservice_.html">&quot;open-<wbr>id/<wbr>Claims<wbr>Service&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_open_id_iopenidclient_.html">&quot;open-<wbr>id/IOpen<wbr>IdClient&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_prefers_color_scheme_prefers_color_scheme_service_.html">&quot;prefers-<wbr>color-<wbr>scheme/prefers-<wbr>color-<wbr>scheme.service&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_public_api_.html">&quot;public-<wbr>api&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_test_.html">&quot;test&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_ui_ui_module_.html">&quot;ui/ui.module&quot;</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="_utils_array_.html">&quot;utils/array&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_utils_check_.html">&quot;utils/check&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_utils_keyboard_keys_.html">&quot;utils/keyboard-<wbr>keys&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_utils_navigator_.html">&quot;utils/navigator&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_utils_random_.html">&quot;utils/random&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_utils_array_.html#arraygroupby" class="tsd-kind-icon">array<wbr>Group<wbr>By</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_utils_array_.html#getobjindexbyvalue" class="tsd-kind-icon">get<wbr>Obj<wbr>Index<wbr>ByValue</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_utils_array_.html#getobjectbyvalue" class="tsd-kind-icon">get<wbr>Object<wbr>ByValue</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_utils_array_.html#inarray" class="tsd-kind-icon">in<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_utils_array_.html#notinarray" class="tsd-kind-icon">not<wbr>InArray</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
