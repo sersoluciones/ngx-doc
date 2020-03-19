@@ -72,26 +72,24 @@
 						<dd><p>Módulo para parametrizar la autenticación con Google</p>
 						</dd>
 						<dt>example</dt>
-						<dd><p>import { NG_GAPI_CONFIG, GoogleSDKModule } from &#39;@sersol/ngx&#39;;</p>
-						</dd>
-						<dt>ngmodule({</dt>
-						<dd><p>imports: [
-								...,
-								GoogleSDKModule.forRoot({
-								provide: NG_GAPI_CONFIG,
-								useValue: {
-								client_id: GOOGLE_CLIENT_ID,
-								scope: &#39;profile email&#39;
-								}
-								}),
-								...
-								],
-								declarations: [...],
-								schemas: [...],
-								providers: [...],
-								bootstrap: [...]
-								})
-							export class AppModule { }</p>
+						<dd><pre><code class="language-import">@NgModule({
+imports: [
+...,
+GoogleSDKModule.forRoot({
+provide: NG_GAPI_CONFIG,
+useValue: {
+client_id: GOOGLE_CLIENT_ID,
+scope: &#39;profile email&#39;
+}
+}),
+...
+],
+declarations: [...],
+schemas: [...],
+providers: [...],
+bootstrap: [...]
+})
+export class AppModule { }```</code></pre>
 						</dd>
 					</dl>
 				</div>
